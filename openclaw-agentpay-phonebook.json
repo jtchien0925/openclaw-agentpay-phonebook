@@ -4,7 +4,10 @@
   "metadata": {
     "created": "2026-02-25",
     "version": "1.0.0",
-    "supported_chains": ["base", "solana"],
+    "supported_chains": [
+      "base",
+      "solana"
+    ],
     "payment_protocol": "x402",
     "agentpay_api": "https://api-pay.agent.tech"
   },
@@ -13,49 +16,140 @@
       "agent_id": "main",
       "display_name": "Primary Assistant",
       "account_bindings": [
-        { "channel": "telegram", "account_id": "tg_bot_001", "peer_id": "123456789" },
-        { "channel": "discord", "account_id": "dc_bot_main", "guild_id": "987654321" }
+        {
+          "channel": "telegram",
+          "account_id": "tg_bot_001",
+          "peer_id": "123456789"
+        },
+        {
+          "channel": "discord",
+          "account_id": "dc_bot_main",
+          "guild_id": "987654321"
+        }
       ],
       "wallets": {
-        "base": { "address": "0x1a2B3c4D5e6F7890AbCdEf1234567890aBcDeF01", "type": "evm", "source": "acp_auto_provisioned", "usdc_enabled": true },
-        "solana": { "address": "7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgHkv", "type": "solana", "source": "manual", "usdc_enabled": true }
+        "base": {
+          "address": "0x1a2B3c4D5e6F7890AbCdEf1234567890aBcDeF01",
+          "type": "evm",
+          "source": "acp_auto_provisioned",
+          "usdc_enabled": true
+        },
+        "solana": {
+          "address": "7xKXtg2CW87d97TXJSDpbD5jBkheTqA83TZRuJosgHkv",
+          "type": "solana",
+          "source": "manual",
+          "usdc_enabled": true
+        }
       },
-      "agentpay": { "preferred_payer_chain": "base", "auto_receive": true }
+      "agentpay": {
+        "preferred_payer_chain": "base",
+        "auto_receive": true
+      }
     },
     {
       "agent_id": "coding",
       "display_name": "Code Assistant",
       "account_bindings": [
-        { "channel": "telegram", "account_id": "tg_bot_code", "peer_id": "223344556" }
+        {
+          "channel": "telegram",
+          "account_id": "tg_bot_code",
+          "peer_id": "223344556"
+        }
       ],
       "wallets": {
-        "base": { "address": "0xAaBbCcDdEeFf00112233445566778899AaBbCcDd", "type": "evm", "source": "acp_auto_provisioned", "usdc_enabled": true }
+        "base": {
+          "address": "0xAaBbCcDdEeFf00112233445566778899AaBbCcDd",
+          "type": "evm",
+          "source": "acp_auto_provisioned",
+          "usdc_enabled": true
+        }
       },
-      "agentpay": { "preferred_payer_chain": "base", "auto_receive": true }
+      "agentpay": {
+        "preferred_payer_chain": "base",
+        "auto_receive": true
+      }
     },
     {
       "agent_id": "trader",
       "display_name": "DeFi Trading Agent",
       "account_bindings": [
-        { "channel": "discord", "account_id": "dc_bot_trade", "guild_id": "112233445" },
-        { "channel": "whatsapp", "account_id": "wa_trade_01", "peer_id": "+15551234567" }
+        {
+          "channel": "discord",
+          "account_id": "dc_bot_trade",
+          "guild_id": "112233445"
+        },
+        {
+          "channel": "whatsapp",
+          "account_id": "wa_trade_01",
+          "peer_id": "+15551234567"
+        }
       ],
       "wallets": {
-        "base": { "address": "0x9988776655443322110011223344556677889900", "type": "evm", "source": "manual", "usdc_enabled": true },
-        "solana": { "address": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy", "type": "solana", "source": "manual", "usdc_enabled": true }
+        "base": {
+          "address": "0x9988776655443322110011223344556677889900",
+          "type": "evm",
+          "source": "manual",
+          "usdc_enabled": true
+        },
+        "solana": {
+          "address": "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy",
+          "type": "solana",
+          "source": "manual",
+          "usdc_enabled": true
+        }
       },
-      "agentpay": { "preferred_payer_chain": "solana", "auto_receive": false, "webhook_url": "https://your-server.com/agentpay-webhook" }
+      "agentpay": {
+        "preferred_payer_chain": "solana",
+        "auto_receive": false,
+        "webhook_url": "https://your-server.com/agentpay-webhook"
+      }
     },
     {
       "agent_id": "payroll",
       "display_name": "Payroll Distribution Bot",
       "account_bindings": [
-        { "channel": "signal", "account_id": "sig_payroll", "peer_id": "+15559876543" }
+        {
+          "channel": "signal",
+          "account_id": "sig_payroll",
+          "peer_id": "+15559876543"
+        }
       ],
       "wallets": {
-        "base": { "address": "0xDeAdBeEf00000000000000000000000000000001", "type": "evm", "source": "acp_auto_provisioned", "usdc_enabled": true }
+        "base": {
+          "address": "0xDeAdBeEf00000000000000000000000000000001",
+          "type": "evm",
+          "source": "acp_auto_provisioned",
+          "usdc_enabled": true
+        }
       },
-      "agentpay": { "preferred_payer_chain": "base", "auto_receive": true, "batch_payments_enabled": true }
+      "agentpay": {
+        "preferred_payer_chain": "base",
+        "auto_receive": true,
+        "batch_payments_enabled": true
+      }
+    },
+    {
+      "agent_id": "claudia",
+      "display_name": "Claudia",
+      "account_bindings": [
+        {
+          "channel": "telegram",
+          "account_id": "claudiaclawdbot",
+          "peer_id": "claudiaclawdbot"
+        }
+      ],
+      "wallets": {
+        "base": {
+          "address": "0x2ce66Af76c250bcaf099344306fc41fDf6DbCBAC",
+          "type": "evm",
+          "source": "manual",
+          "usdc_enabled": true
+        }
+      },
+      "agentpay": {
+        "preferred_payer_chain": "base",
+        "auto_receive": true
+      }
     }
   ],
   "lookup_indexes": {
@@ -65,7 +159,8 @@
       "0xAaBbCcDdEeFf00112233445566778899AaBbCcDd": "coding",
       "0x9988776655443322110011223344556677889900": "trader",
       "DRpbCBMxVnDK7maPM5tGv6MvB3v1sRMC86PZ8okm21hy": "trader",
-      "0xDeAdBeEf00000000000000000000000000000001": "payroll"
+      "0xDeAdBeEf00000000000000000000000000000001": "payroll",
+      "0x2ce66af76c250bcaf099344306fc41fdf6dbcbac": "claudia"
     },
     "by_channel_peer": {
       "telegram:123456789": "main",
